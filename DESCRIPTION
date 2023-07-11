@@ -1,0 +1,33 @@
+Package: curatedPCaWorkflow
+Title: Curated Prostate Cancer Analysis Workflows
+Version: 0.0.1
+Date: 2023-07-11
+Authors@R: c(person("Teemu Daniel", "Laajala", email = "teelaa@utu.fi", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-7016-7354")),
+             person("Varsha", "Sreekanth", email = "varsha.sreekanth@cuanschutz.edu", role = "ctb"), 
+             person("Michael", "Orman", email = "michael.orman@cuanschutz.edu", role = "ctb"),
+             person("Alex", "Soupir", email = "Alex.Soupir@moffitt.org", role = "ctb")
+           )
+Description: This is a sister package to the curatedPCaData package, which serves curated prostete cancer ExperimentHub data. Here-in, the data are analyzed and exemplified as per Bioconductor's workflow package standards.
+License: CC BY 4.0
+Encoding: UTF-8
+RoxygenNote: 7.2.3
+VignetteBuilder: knitr
+biocViews: Workflow, GeneExpressionWorkflow, ProstateCancerData, CancerData, Homo_sapiens_Data, MicroarrayData, RNASeqData, ExpressionData, CopyNumberVariationData, Somatic
+URL: https://github.com/Syksy/curatedPCaWorkflow
+BugReports: https://github.com/Syksy/curatedPCaWorkflow/issues
+Depends: R (>= 4.3.0), S4Vectors (>= 0.23.18), curatedPCaData
+Imports: 
+    utils, 
+    methods,
+    rlang,
+    stats,
+    ggplot2,
+    rmarkdown,
+    survival,
+    survminer,
+    ComplexHeatmap,
+    corrplot    
+Suggests: 
+    BiocGenerics,
+    BiocStyle,
+    knitr
